@@ -12,7 +12,10 @@ user_IP_address = input("Hello, {}, what is your IP address? ".format(name))
 seg_count = 0
 new_string = ''
 
-if user_IP_address[len(user_IP_address) - 1] == '.':
+if user_IP_address == '':
+    user_IP_address = input("Please enter a valid IP address? ")
+
+elif user_IP_address[len(user_IP_address) - 1] == '.':
     for char in user_IP_address:
         if char not in '0123456789':
             seg_count += 1
