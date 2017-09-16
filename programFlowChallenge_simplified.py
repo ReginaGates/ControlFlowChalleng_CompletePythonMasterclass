@@ -15,12 +15,12 @@ new_string = ''
 #         if char not in '0123456789':
 #             seg_count += 1
 #
-# elif user_IP_address[-1] != '.':
+elif user_IP_address[-1] != '.':
 #     for char in user_IP_address:
 #         if char not in '0123456789':
 #             seg_count += 1
 #     seg_count += 1
-user_IP_address += '.'
+    user_IP_address += '.'
 #
 # print("This IP address has {} segments.".format(seg_count))
 #
